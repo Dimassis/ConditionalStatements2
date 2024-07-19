@@ -13,7 +13,7 @@ public class Main {
         //Task 2
         short clientDeviceYear = 2015;
         System.out.println("");
-        if (clientOs == 0 && clientDeviceYear > 2015 ) {
+        if (clientOs == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOs == 1 && clientDeviceYear > 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -23,8 +23,8 @@ public class Main {
 
         //Task 3
         System.out.println("");
-        short year = 2021;
-        if (year % 4 == 0 && year >= 1584) {
+        short year = 1800;
+        if (year % 4 == 0 && year >= 1584 && year % 100 != 0 || year % 400 == 0) {
             System.out.println("Год высокосный");
         } else {
             System.out.println("Год невысокосный");
@@ -43,7 +43,7 @@ public class Main {
             byte days = 3;
             System.out.println("Доставка в пределах 60 км до 100 км занимает дней: " + days);
         } else {
-            System.out.println("Доставка в пределах 100 км нет");
+            System.out.println("Доставка в пределах 100 км невозможна");
         }
 
         //Task 5
